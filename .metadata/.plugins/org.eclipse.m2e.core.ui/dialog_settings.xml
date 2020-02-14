@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Kreso_privat\VVG\Java_programiranje\Jelic-9"/>
+			<item value="C:\Kreso_privat\VVG\Java_programiranje\Pavse-7\Pavse-7"/>
+			<item value="C:\Kreso_privat\VVG\Borovcak-7"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Test"/>
+			<item value="Marenic-7"/>
+			<item value="Marenic-1"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Test"/>
+			<item value="Marenic-7"/>
+			<item value="Marenic-1"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

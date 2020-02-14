@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Marenic-10Lab/src/hr/java/vjezbe/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="hr.java.vjezbe.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Marenic-10Lab"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path C:\Kreso_privat\VVG\Java_programiranje\javafx-sdk-11.0.2\lib&#13;&#10;--add-modules=javafx.controls --add-modules javafx.controls&#13;&#10;--add-exports=javafx.graphics/com.sun.javafx.util=ALL-UNNAMED&#13;&#10;--add-exports=javafx.base/com.sun.javafx.reflect=ALL-UNNAMED&#13;&#10;--add-exports=javafx.base/com.sun.javafx.beans=ALL-UNNAMED&#13;&#10;--add-exports=javafx.graphics/com.sun.glass.utils=ALL-UNNAMED&#13;&#10;--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED"/>
+</launchConfiguration>

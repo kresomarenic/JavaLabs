@@ -1,0 +1,134 @@
+package hr.java.vjezbe.glavna;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import hr.java.vjezbe.entitet.Predmet;
+import hr.java.vjezbe.entitet.Profesor;
+
+public class Glavna {	
+
+	public static void main(String[] args) {		
+			
+		Scanner input = null;
+		Integer numberOfInputs = 0;	
+		
+		try {
+			input = new Scanner(System.in);
+			
+			numberOfInputs = declareInput(input, Profesor.NAME, Profesor.MIN_INPUT);
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+			
+		} finally {
+			
+		}
+
+	}
+	
+
+	private static Integer declareInput(Scanner input, String type, Integer minimum) {
+		
+		Integer numberOfInputs = 0;		
+		
+		do {			
+			numberOfInputs = 0;
+			System.out.format("Unesite broj %sa koji želite unijeti (min. %s): ", type, minimum);
+			try {
+				numberOfInputs = input.nextInt();
+				if (numberOfInputs < minimum) {
+					System.out.format("Minimalni broj profesora za unos je %s! Pokušajte ponovno.", minimum);					
+				}
+			} catch (Exception e) {
+				input.reset();			
+				System.out.println("Neispravan unos. Pokušajte ponovno.");
+			} 
+		} while (numberOfInputs < minimum);
+		return null;
+	}
+
+
+	private static void printStartInputMsg(String type, Integer min) {
+		
+		
+	}
+
+
+	private static List<Profesor> populateProfessors(Scanner input) {
+		
+		Integer numberOfInputs = 0;
+		
+		System.out.print("Unesite broj profesora koji želite unijeti (min. 2): ");
+		do {
+			try {
+				numberOfInputs = input.nextInt();
+				if (numberOfInputs < 2) {
+					System.out.println("Minimalni broj profesora za unos je 2! Pokušajte ponovno.");					
+				}
+			} catch (Exception e) {
+				System.out.println("Neispravan unos. Pokušajte ponovno.");
+			} 
+		} while (numberOfInputs < 2);
+		
+		List<Profesor> profesors = new ArrayList<Profesor>();
+		for (int i = 1; i <= numberOfInputs; i++) {
+			System.out.format("Unesite %s. profesora:", i);			
+			System.out.print("Ime: ");
+			String name = input.next();
+			System.out.print("Prezime: ");
+			String surname = input.next();
+			System.out.print("Titula: ");
+			String title = input.next();
+			System.out.print("Šifra: ");
+			String code = input.next();
+			profesors.add(new Profesor(code, name, surname, title));
+		}
+		return profesors;
+	}
+	
+	private static List<Predmet> populateClasses(Scanner input, List<Profesor> professors) {
+		
+		Integer numberOfInputs = 0;
+		
+		System.out.print("Unesite broj predmeta koji želite unijeti (min. 3): ");
+		do {
+			try {
+				numberOfInputs = input.nextInt();
+				if (numberOfInputs < 3) {
+					System.out.println("Minimalni broj predmeta za unos je 3! Pokušajte ponovno.");					
+				}
+			} catch (Exception e) {
+				System.out.println("Neispravan unos. Pokušajte ponovno.");
+			} 
+		} while (numberOfInputs < 3);
+		
+		List<Predmet> classes = new ArrayList<Predmet>();
+		for (int i = 1; i <= numberOfInputs; i++) {
+			System.out.format("Unesite %s. predmet:", i);			
+			System.out.print("Naziv: ");
+			String name = input.next();
+			System.out.print("Broj ECTS bodova: ");
+			String ectsPoints = input.next();
+			System.out.print("Šifra: ");
+			String code = input.next();
+			System.out.print("Odaberite profesora: ");
+			for (int j = 0; j < professors.size(); j++) {
+				System.out.format("\t%s. %s %s", j+1, professors.get(j).getIme(), professors.get(j).getPrezime());
+			}
+			System.out.print("Odabir: ");
+			
+			
+			
+		}
+		return null;
+	}
+
+}

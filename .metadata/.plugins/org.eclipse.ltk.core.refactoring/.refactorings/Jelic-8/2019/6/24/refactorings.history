@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BazaPodatakaException.java&apos; to &apos;Marenic-9/src/hr.java.vjezbe.iznimke&apos;&#x0D;&#x0A;- Original project: &apos;Jelic-8&apos;&#x0D;&#x0A;- Destination element: &apos;Marenic-9/src/hr.java.vjezbe.iznimke&apos;&#x0D;&#x0A;- Original element: &apos;hr.java.vjezbe.iznimke.BazaPodatakaException.java&apos;" description="Copy compilation unit" destination="=Marenic-9/src&lt;hr.java.vjezbe.iznimke" element1="/src&lt;hr.java.vjezbe.iznimke{BazaPodatakaException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1560503696821" units="1" version="1.0"/>
+</session>
